@@ -1,0 +1,20 @@
+aside .banner h3 a
+  @include border-bottom-radius(100px)
+  // @include border-bottom-radius(3em)
+  color: white !important
+  background-color: $link-color !important
+  @include transition-property('background-color, color')
+  @include transition-duration(1s)
+  &:hover
+    color: black !important
+    background-color: $link-hover-background-color !important
+    @include transition-property('background-color, color')
+    @include transition-duration(1s)
+    text-decoration: none
+
+aside .banner-hook
+  margin-top: -58px
+  @include transition-property(margin-top)
+  @include transition-duration(1s)
+  &:hover
+    margin-top: -30px

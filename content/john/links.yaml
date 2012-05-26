@@ -1,0 +1,85 @@
+#Friends
+charlie:
+  name:  Charlie
+  image: charlie.jpg
+  url:   http://tirl.org/
+micah:
+  name:  Micah
+  image: micah.png
+  url:   http://kezvh.net/
+blake:
+  name:  Blake
+  image: blake.jpg
+  url:   http://www.blakeboles.com/
+finn:
+  name:  Finn
+  image: finn.jpg
+  url:   http://www.finnb.net/
+reno:
+  name:  Reno
+  image: reno.jpg
+  url:   http://macdonaldlawsf.com/attorneys/renofernandez/
+jeff:
+  name:  Jeff
+  image: jeff.jpg
+  url:   http://www.couchsurfing.org/profile.html?id=308LP3F
+corey:
+  name:  Corey
+  image: corey.jpg
+  url:   http://fatooh.org/
+
+# Social
+twitter:
+  name:  Twitter
+  image: twitter.png
+  url:   https://twitter.com/unjingoro
+identica:
+  name:  'Identi.ca'
+  image: identica.jpg
+  url:   https://identi.ca/jingoro
+couchsurfing:
+  name:  Couchsurfing
+  image: couchsurfing.png
+  url:   http://www.couchsurfing.org/people/jingoro
+'google-plus':
+  name:  'Google+'
+  image: google-plus.jpg
+  url:   https://plus.google.com/102238304768713519377
+  
+# Past
+kendo:
+  name:  Kendo
+  image: kendo.jpg
+  url:   http://berkeleykendo.org/
+go:
+  name:  Go
+  image: go.jpg
+  url:   https://en.wikipedia.org/wiki/Go_%28board_game%29
+yoga:
+  name:  Monkey Yoga
+  image: yoga.jpg
+  url:   http://www.monkeyyoga.com/
+lindy:
+  name:  Linday Hop
+  image: lindy.jpg
+  url:   http://www.920special.com/
+'muay-thai':
+  name:  Muay Thai
+  image: muay-thai.png
+  url:   http://www.fairtex.com/
+aikido:
+  name:  Aikido
+  image: aikido.jpg
+  url:   http://bayareashodokan.org/
+coops:
+  name:  Co-ops
+  image: coops.jpg
+  url:   http://converge.casa-z.org/
+physics:
+  name:  Physics
+  image: physics.png
+  url:   http://www.physics.berkeley.edu/
+games:
+  name:  Games
+  image: games.jpg
+  url:   http://streetfighter.wikia.com/wiki/Street_Fighter_II

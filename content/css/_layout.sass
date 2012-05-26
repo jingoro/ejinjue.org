@@ -1,0 +1,142 @@
+html, body
+  height: 100%
+  font-size: $font-size
+  line-height: $line-height
+
+.max-page-width
+  max-width: 1140px
+
+#page
+  min-height: 100%
+  height: auto !important
+  height: 100%
+  margin: 0 auto (-($footer-height + 1px))
+
+#footer-push
+  height: $footer-height + 1px
+
+#header-wrapper, #footer-wrapper
+  @extend .container
+  position: relative
+
+#header-wrapper
+  height: $header-height
+  background-color: $header-background-color
+  border-bottom: $header-border-style
+  z-index: 10
+
+#footer-wrapper
+  height: $footer-height
+  background-color: $footer-background-color
+  border-top: $footer-border-style
+  z-index: 500
+
+header, footer
+  @extend .max-page-width
+  @extend .row
+  position: relative
+  //z-index: 500
+
+header
+  height: $header-height
+  .nav-padding, nav
+    @extend .sixcol
+    margin-top: 0.4em
+  nav
+    @extend .last
+    text-align: right
+
+footer
+  height: $footer-height
+  .quote, .about
+    @extend .sixcol
+    margin-top: 0.4em
+  .about
+    @extend .last
+    text-align: right
+
+#banner
+  h3
+    margin: 0
+    padding: 0
+
+#aside-floater
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 100
+  width: 100%
+  height: 1px
+
+#aside-container
+  @extend .container
+  height: 1px
+
+#aside-wrapper
+  @extend .max-page-width
+  @extend .row
+  height: 1px
+  overflow: visible
+
+aside
+  @extend .fourcol
+  .banner
+    position: relative
+    z-index: 100
+    h3
+      margin: 0
+      a
+        display: block
+        font-size: 50px
+        width: 200px
+        height: 100px
+        margin: 0 auto
+        padding: 0
+        text-align: center
+
+  .banner-hook
+    position: relative
+    z-index: 10
+    
+  .content
+    margin-top: 2em
+  
+
+#main-wrapper
+  @extend .container
+  margin-top: 2em
+  margin-bottom: 2em
+
+#main
+  @extend .max-page-width
+  @extend .row
+
+#content-padding
+  @extend .fourcol
+
+#content
+  @extend .eightcol
+  @extend .last
+
+@media handheld, only screen and (max-width: 767px)
+  header
+    .nav-padding
+      display: none
+    nav
+      text-align: center
+  footer
+    .quote
+      float: left
+  #aside-floater
+    position: static
+  #aside-floater, #aside-container, #aside-wrapper, aside
+    height: inherit
+  #main-wrapper
+    margin-top: 0
+  aside
+    .banner
+      margin-bottom: 2em
+    .banner-hook
+      display: none
+    .content
+      margin-top: 0

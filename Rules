@@ -1,0 +1,83 @@
+#!/usr/bin/env ruby
+
+BYPASS_FILES = %w(404.html crossdomain.xml humans.txt robots.txt john/john-pub.txt) unless defined?(BYPASS_FILES)
+IMAGE_COMPRESS_OPTIONS = { :pngout => false } unless defined?(IMAGE_COMPRESS_OPTIONS)
+
+BYPASS_FILES.each do |file|
+  compile("/#{file.sub /\..+/, ''}/") do
+    # don't filter bypass files
+  end
+end
+
+compile %r{/_.+/$} do
+  # don't filter partials
+end
+
+compile '/css/*/' do
+  filter :sass, Compass.sass_engine_options
+end
+
+compile '/js/*/' do
+  filter :concat_js
+  filter :uglify_js
+end
+
+compile '/img/*/' do
+  filter :image_compressor, IMAGE_COMPRESS_OPTIONS if item.binary?
+end
+
+compile '*' do
+  if item.binary?
+    # don’t filter binary items
+  else
+    case item[:extension]
+    when 'md'
+      filter :erb
+      filter :kramdown
+    when 'haml'
+      filter :haml
+    else
+      filter :erb
+    end
+    if %w(html haml md).include?(item[:extension])
+      layout 'default'
+      filter :cache_buster
+    end
+  end
+end
+
+BYPASS_FILES.each do |file|
+  route("/#{file.sub /\..+/, ''}/") do
+    "/#{file}" # route bypass files as is
+  end
+end
+
+route %r{/_.+/$} do
+  nil # don't route partials
+end
+
+route '/css/*/' do
+  fp = fingerprint(item[:filename])
+  item.identifier.chop + fp + '.css'
+end
+
+route '/js/*/' do
+  fp = fingerprint(item[:filename])
+  item.identifier.chop + fp + '.js'
+end
+
+route '/john/links/' do
+  nil
+end
+
+route '*' do
+  if item.binary?
+    # Write item with identifier /foo/ to /foo.ext
+    item.identifier.chop + '.' + item[:extension]
+  else
+    # Write item with identifier /foo/ to /foo/index.html
+    item.identifier + 'index.html'
+  end
+end
+
+layout '*', :haml

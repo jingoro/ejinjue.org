@@ -1,0 +1,62 @@
+---
+title: The NASCO Wiki Class - November, 2006
+---
+
+# <%= @item[:title] %>
+
+## Featured Wikis
+- [Ant Hill Cooperative Wiki](http://ant-hill.org/)
+- [Sasona Co-op Wiki](http://wiki.sasona.org/)
+- [Davis Wiki](http://daviswiki.org/)
+- [Wikipedia's NASCO Properties article](http://en.wikipedia.org/wiki/NASCO_Properties)
+- [Wikipedia's Wallmart article](http://en.wikipedia.org/wiki/Wallmart)
+- [Charlie's Music Wiki](http://eamusic.dartmouth.edu/wiki/)
+- [NASCO Policy Wiki](http://nasco.sasona.org)
+
+## Hosted Wikis
+In less than 5-minutes, you can have your very own Wiki by using one of the following sites.  Most are ad-supported but some aren't, (e.g., [The Open Planning Project](http://www.openplans.org/)).  In addition, some ad-supported sites allow you to pay to get extra space and turn off ads.
+
+If you're starting out, try out the [Scratchpad Quick Wiki](http://scratchpad.wikia.com/).  You don't even need to create an account and there's no worry if you screw something up.
+
+- [Scratchpad Quick Wiki](http://scratchpad.wikia.com/) (Ad Supported)
+
+Once you feel you're ready to start working on your Wiki, give any of the following a try.  They all work fairly well although some are easier to setup than others.  (I would say PBWiki is probably the easiest and XWiki being the most convoluted.)  If you don't know which one to choose, start with the first one, see if it works for you, and then either stick with it or try the next one on the list.  Read the instructions for each wiki -- some, such as Wikia, have restrictions for what type of content you can include (i.e., Wikia only wants big popular projects, not small personal projects).
+
+- [The Open Planning Project](http://www.openplans.org/) (Free for Community, No Ads!)
+- [PBWiki](http://pbwiki.com/) (Pay Upgrades Available)
+- [WikiSpaces](http://www.wikispaces.com/) (Ad Supported, Pay Upgrades Available)
+- [Wikia](http://wikia.com/wiki/Start_a_new_Wikia) (Ad Supported)
+- [XWiki](http://xwiki.com/) (Ad Supported)
+- [Schtuff](http://www.schtuff.com/)
+
+## Web Document Sharing
+These are web sites that have online tools similar to using [OpenOffice](http://www.openoffice.org/) or [Microsoft Office](http://office.microsoft.com/), albeit everything happens in your browser.  In addition, you can publish your information on the web and allow other to people to edit the document in ''real time.''  They are not Wiki's per se, but if you want to share information with a ''very'' small group of people (4 or less), then this may make more sense than going through the trouble of setting up an entire Wiki.
+
+- [Google Word Processor and Spread Sheets](http://docs.google.com/)
+- [Writeboard](http://www.writeboard.com/)
+
+## Wiki Software
+So you want to run your own Wiki and be in control?  Of course, you will need to be (or find someone who is) a little technically savvy.  But you'll have the satisfaction of really being in control of the action!
+
+### Charlie and John's Picks
+
+In ''no order whatsoever'': 
+
+- [Sycamore Wiki](http://www.projectsycamore.org/) (Runs the [Davis Wiki](http://daviswiki.org/))
+- [MediaWiki](http://www.mediawiki.org/wiki/Download) (Popular, used for [Wikipedia](http://wikipedia.org/))
+- [TWiki](http://twiki.org/) (Solid featureset, actively developed.)
+- [MoinMoin](http://moinmoin.wikiwikiweb.de/) (The Wiki used for this website, actively developed.)
+
+### List of Wiki Software With Comparisons
+- [Wiki Matrix](http://www.wikimatrix.org/) (compare wiki features side by side)
+
+## More Information
+- [Course Slides](NascoWikiClass/Slides)
+- [Course Description](http://nasco.coop/programs+&+services/nasco+institute/workshops/by+course+block.en.html#112)
+- [What is a Wiki?](http://wiki.org/wiki.cgi?WhatIsWiki)
+- [Who Writes Wikipedia?](http://www.aaronsw.com/weblog/whowriteswikipedia)
+- [UWM Wiki Course](http://www.uwm.edu/Libraries/courses/wiki/)
+
+"Not everyone needs a wiki. Not everyone wants a wiki. Not every situation benefits from becoming an open discussion or collaboration forum."
+
+­The Wiki Way (2001, p. 30, Bo Leuf and Ward Cunningham)

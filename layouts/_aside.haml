@@ -1,0 +1,14 @@
+#aside-floater
+  #aside-container
+    #aside-wrapper
+      %aside
+        .banner
+          %h3= link_to 'Ejinjue', '/'
+        - @aside = content_for @item, :aside
+        - if @aside
+          .content= @aside
+        - else
+          .banner-hook
+            %img{ :alt => 'Hook Me!', :src => '/img/hook.png' }
+            // Thank you venkane (Creative Commons)
+            // http://www.flickr.com/photos/7241355@N04/2053797356

@@ -1,0 +1,70 @@
+.page-home #content
+  ul
+    padding-left: 0
+    list-style: none
+    li
+      padding-left: 0.5em
+      font-size: 4em
+      margin-bottom: 0.25em
+      border-bottom: 1px solid #aa9988
+
+.page-john aside
+  dt, dd
+    line-height: 1.5em
+  dt
+    float: left
+    text-align: right
+    display: block
+    width: 5em
+  dd
+    margin-left: 6em
+  img
+    display: block
+    width: 123px
+    height: 175px
+    margin: 0 auto
+    border: 1px solid black
+
+.page-john #content
+  .link-set
+    @extend .row
+    h2
+      @extend .twocol
+      text-align: center
+      padding-top: 0.6em
+    ul
+      @extend .tencol
+      @extend .last
+      @include inline-block-list-container
+      text-align: center
+      li
+        @include inline-block-list-item
+        margin: 5px
+      a
+        text-align: center
+        display: block
+        width: 100px
+        height: 100px
+        background-color: transparent
+        border: 3px solid black
+        @include border-radius(53px)
+        @include transition-property(all)
+        @include transition-duration(2s)
+        @include rotate(180deg)
+        &:hover
+          border: 3px solid red
+          //@include box-shadow(0 0 20px red)
+          @include transition-duration(0.2s)
+          @include rotate(0deg)
+          @include scale(1.1, 1.1)
+      img
+        width: 100px
+        height: 100px
+        @include border-radius(50px)
+
+@media handheld, only screen and (max-width: 767px)
+  .page-john #content .link-set
+    h2
+      padding-top: 0
+    ul
+      text-align: center
