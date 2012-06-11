@@ -23,9 +23,10 @@
     -# Mobile viewport optimized: h5bp.com/viewport
     %meta{ :name => "viewport", :content => "width=device-width" }
 
-    = render '_openid'
-
     %link{ :rel => "stylesheet", :href => "/css/style.css" }
+
+    - @head = content_for @item, :head
+    = @head if @head
 
   %body{ :class => page_class }
     #page
