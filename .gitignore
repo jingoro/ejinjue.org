@@ -1,7 +1,4 @@
-# nanoc/project directories to ignore
+.bundle
 .sass-cache
-.rvmrc
-output
-tmp
-non-added-photos
+build
 Gemfile.lock

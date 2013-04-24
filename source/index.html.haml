@@ -1,0 +1,14 @@
+---
+title: Home of John Nishinaga
+description: "John Nishinaga's Website"
+page_class: page-home
+---
+- content_for :head do
+  %link{ rel: "openid2.provider", href: "https://www.google.com/accounts/o8/ud?source=profiles" }
+  %link{ rel: "openid2.local_id", href: "https://profiles.google.com/102238304768713519377" }
+
+%ul.home-links
+  %li= link_to 'John', '/john/'
+  %li= link_to 'Projects', '/projects/'
+  %li= link_to 'Notes', '/notes/'
+  %li= link_to 'Play', '/play/'
